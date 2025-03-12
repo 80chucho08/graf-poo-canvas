@@ -79,22 +79,22 @@ class Game {
         this.paddle2 = new Paddle(canvas.width - 10, canvas.height / 2 - 50, 10, 100); // Controlado por la computadora
         this.keys = {}; // Para capturar las teclas
 
-        this.ball2 = new Ball(canvas.width / 2, canvas.height / 2, 5, 3, 3);
-        this.ball3 = new Ball(canvas.width / 2, canvas.height / 2, 2, 2, 2);
-        this.ball4 = new Ball(canvas.width / 2, canvas.height / 2, 15, 1, 1);
-        this.ball5 = new Ball(canvas.width / 2, canvas.height / 2, 20, 4, 2);
+        this.ball2 = new Ball(canvas.width / 2, canvas.height / 2,30, 3, 3);
+        this.ball3 = new Ball(canvas.width / 2, canvas.height / 2, 8, 2, 2);
+        this.ball4 = new Ball(canvas.width / 2, canvas.height / 2, 30, 1, 1);
+        this.ball5 = new Ball(canvas.width / 2, canvas.height / 2, 60, 4, 2);
 
     }
 
     draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         this.ball.draw('blue');
-        this.ball2.draw('orange');
-        this.ball3.draw('white');
-        this.ball4.draw('cyan');
-        this.ball5.draw('gray');
+        this.ball2.draw('red');
+        this.ball3.draw('green');
+        this.ball4.draw('magenta');
+        this.ball5.draw('white');
         
-        this.paddle1.draw('green', 100);
+        this.paddle1.draw('blue ', 100);
         this.paddle2.draw('red', 0);
     }
 
@@ -223,8 +223,3 @@ class Game {
 // Crear instancia del juego y ejecutarlo
 const game = new Game();
 game.run();
-
-
-
-
-        // Hacer las paleatas mas grandes y cambiarle el color agregar mas pelotas y hacer que se muevan mas rapido y tengan diferentes colores y tamaños
